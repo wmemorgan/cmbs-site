@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CM Business Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+      <div id="logo" class="brand"><a href="/">CM Business Solutions</a></div>
+      <ul class="navbar-nav">
+        <li><a href="/" class="nav-link">Home</a></li>
+        <!-- <li> -->
+        <li class="dropdown">
+          <button class="dropbtn">Services
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Software Development</a>
+            <a href="#">Data Engineering & Analytics</a>
+            <a href="#">Virtual CIO</a>
+          </div>
+        </li>
+        <!-- </li> -->
+        <li><a href="/about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link contact-btn">Contact</a></li>
+      </ul>
+      <!-- Side Navigation Menu (for smaller screens) -->
+      <div id="menu-small">&#9776;</div>
+
+    </nav>
+    <div id="side-menu" class="side-nav">
+      <!-- <a href="" id="close-slide">&times;</a> -->
+      <div class="form-header">
+        <p class="brand">
+          <a href="/">CM Business Solutions</a>
+        </p>
+        <i id="close-slide" class="far fa-times-circle"></i>
+      </div>
+      <hr>
+      <a href="" class="nav-link side-nav-link">
+        Services
+        <i class="fa fa-caret-down" aria-hidden="true"></i>
+      <a href="/about" class="nav-link side-nav-link">About</a>
+      <a href="#contact" class="nav-link side-nav-link contact-btn">Contact</a>
+    </div>
+
+    <!-- Contact Form -->
+    <div id="contact" class="contact-form">
+      <div class="alert">You message has been sent</div>
+      <div class="form-header">
+        <i id="close-form" class="far fa-times-circle"></i>
+        <h3>Contact Me</h3>
+      </div>
+      <form id="contact-me" name="contact-me">
+        <p class="cta-text">How can I help you?</p>
+        <p>
+          <label for="first-name">First Name*</label>
+          <input type="text" name="first-name" id="first-name" required>
+        </p>
+        <p>
+          <label for="last-name">Last Name*</label>
+          <input type="text" name="last-name" id="last-name" required>
+        </p>
+        <p>
+          <label for="email">Email Address*</label>
+          <input type="email" name="email" id="email" required>
+        </p>
+        <p>
+          <label for="phone">Phone Number</label>
+          <input type="text" name="phone" id="phone">
+        </p>
+        <p class="full">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="5"></textarea>
+        </p>
+    
+        <!-- Production recaptcha key -->
+        <div class="full g-recaptcha" data-sitekey="6LddKloUAAAAAPW9DJ_i3azVWbhyj63K_eScTIbv"
+            style="transform:scale(0.7);-webkit-transform:scale(0.7);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+        <p class="full">
+          <button type="submit">Submit</button>
+        </p>
+      </form>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
