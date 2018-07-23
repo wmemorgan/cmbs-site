@@ -896,6 +896,7 @@ p.section-text {
 }
 
 .section-footer-content {
+  width: 80vw;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -1215,6 +1216,11 @@ p.section-text {
     width: 40vw;  
     font-size: 0.75rem;  
     padding: 0.25rem 0.5rem;
+  }
+
+  .section-footer-content {
+    width: 95vw;
+    padding: 1rem;
   }
 
   .sitemap {
