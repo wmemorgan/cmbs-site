@@ -92,13 +92,19 @@ for (let i = 0; i < document.getElementsByClassName('brand').length; i++) {
 }
 
 /*-----Sub menu functions-----*/
+const hideMenu = () => {
+  if (document.querySelector('.show-menu')) {
+    document.querySelector('.show-menu').classList.add('hide-menu')
+    document.querySelector('.show-menu').classList.remove('show-menu')
+  }
+}
+
 const toggleSubMenu = () => {
   if (document.querySelector('.hide-menu')) {
     document.querySelector('.hide-menu').classList.add('show-menu')
     document.querySelector('.hide-menu').classList.remove('hide-menu')
   } else {
-    document.querySelector('.show-menu').classList.add('hide-menu')
-    document.querySelector('.show-menu').classList.remove('show-menu')
+    hideMenu()
   }  
 }
 
@@ -114,7 +120,7 @@ const openSlideMenu = () => {
 const closeSlideMenu = () => {
   document.getElementById('side-menu').style.width = '0';
   removeActiveClass()
-  toggleSubMenu()
+  hideMenu()
 }
 
 openSlideButton.addEventListener("click", openSlideMenu);
