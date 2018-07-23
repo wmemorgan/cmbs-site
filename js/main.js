@@ -16,6 +16,8 @@
 const openSlideButton = document.getElementById('menu-small')
 const closeSlideButton = document.getElementById('close-slide')
 const sideNavLink = document.getElementsByClassName('side-nav-link')
+const dropDownButton = document.getElementsByClassName('dropbtn')
+const dropDownMenu = document.getElementsByClassName('dropdown-menu')
 const cardSummary = document.getElementsByClassName('card-summary')
 const summaryButton = document.getElementsByClassName('card-summary-btn')
 const cardDetail = document.getElementsByClassName('card-detail')
@@ -89,6 +91,20 @@ for (let i = 0; i < document.getElementsByClassName('brand').length; i++) {
   element.addEventListener("click", removeActiveClass)
 }
 
+/*-----Sub menu functions-----*/
+const toggleSubMenu = () => {
+  if (document.querySelector('.hide-menu')) {
+    document.querySelector('.hide-menu').classList.add('show-menu')
+    document.querySelector('.hide-menu').classList.remove('hide-menu')
+  } else {
+    document.querySelector('.show-menu').classList.add('hide-menu')
+    document.querySelector('.show-menu').classList.remove('show-menu')
+  }  
+}
+
+for (let i = 0; i < dropDownButton.length; i++) {
+  dropDownButton[i].addEventListener("click", toggleSubMenu)
+}
 
 /*-----Side navigation functions-----*/
 const openSlideMenu = () => {
@@ -98,6 +114,7 @@ const openSlideMenu = () => {
 const closeSlideMenu = () => {
   document.getElementById('side-menu').style.width = '0';
   removeActiveClass()
+  toggleSubMenu()
 }
 
 openSlideButton.addEventListener("click", openSlideMenu);
