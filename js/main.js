@@ -92,7 +92,7 @@ for (let i = 0; i < document.getElementsByClassName('brand').length; i++) {
 
 /*-----Side navigation functions-----*/
 const openSlideMenu = () => {
-  document.getElementById('side-menu').style.width = '250px';
+  document.getElementById('side-menu').style.width = '300px';
 }
 
 const closeSlideMenu = () => {

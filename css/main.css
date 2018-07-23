@@ -213,6 +213,11 @@ nav ul {
   background-color: var(--default-primary-color);
 }
 
+.dropdown-menu {
+  margin: 0;
+  padding: 0;
+}
+
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
@@ -295,7 +300,7 @@ nav ul {
 .side-nav a {
   text-align: left;
   font-size: 1.15rem;
-  padding: .625rem .625rem .625rem 1.875rem;
+  padding: .625rem .625rem 0 1.875rem;
   text-decoration: none;
   display: block;
   transition: 0.3s;
@@ -304,6 +309,15 @@ nav ul {
 .side-nav a:hover, .side-nav.nav-link.active {
   background-color: var(--overlay-text-color);
   color: var(--overlay-bg-color);
+}
+
+.side-nav-link {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-sub-link {
+  padding: 0.5rem;
 }
 
 
