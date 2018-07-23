@@ -121,6 +121,12 @@ li {
   margin-bottom: 20px;
 }
 
+.list-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .emphasize-text {
   color: var(--emphasis-text-color);
   font-weight: bold;
@@ -851,7 +857,7 @@ p.section-text {
 
 
 /*-------footer------*/
-footer {
+.footer {
   position: absolute;
   bottom: 0;
   color: var(--text-primary-color);
@@ -866,29 +872,29 @@ footer {
   text-align: center;
 }
 
-footer * {
+.footer * {
   color: var(--text-primary-color);
   text-decoration: none;
 }
 
-footer .cta-text {
+.footer .cta-text {
   font-size: 1.15rem;
 }
 
-footer a:hover, footer button:hover{
+.footer a:hover, .footer button:hover{
   border-bottom: 2px solid var(--text-primary-color);
   border-radius: 0%;
 }
 
-footer ul>li {
+.footer ul>li {
   list-style: none;
 }
 
-footer .cta-group {
+.footer .cta-group {
   grid-column: span 2;
 }
 
-footer .cta-btn {
+.footer .cta-btn {
   justify-self: center;
   width: 30vw;
   font-weight: bold;
@@ -900,11 +906,11 @@ footer .cta-btn {
   padding: 0.5rem 1rem;
 }
 
-footer .navbar {
+.footer .navbar {
     display: none;
   }
 
-footer #logo-footer a {
+.footer #logo-footer a {
   font-size: 1.15rem;
   padding: 0.5rem 0.5rem 1rem 0.5rem;
   text-align: left;
@@ -916,20 +922,20 @@ footer #logo-footer a {
   letter-spacing: 0.15em;
 }
 
-footer .social-media-group {
+.footer .social-media-group {
   align-self: center;
   text-align: center;
   font-size: 0.85rem;
 }
 
-footer .social-cta {
+.footer .social-cta {
   font-size: 0.85rem;
   height: 1.25rem;
   
   
 }
 
-footer .social-media-icons {
+.footer .social-media-icons {
   margin: 0 auto;
   width: 20vw;
   font-size: 2rem;
@@ -939,10 +945,10 @@ footer .social-media-icons {
   
 }
 
-footer .navbar, footer .social-media-group {
+.footer .navbar, .footer .social-media-group {
   text-transform: uppercase;
 }
-footer #copyright-info {
+.footer #copyright-info {
   font-size: 0.8rem;
   grid-column: 1 / span 2;
 }
@@ -1198,33 +1204,33 @@ footer #copyright-info {
  } 
 
   /*---footer----*/
-  footer {
+  .footer {
     margin-top: 0;
     font-size: 0.75rem;
     grid-template-columns: 1fr;
   }
 
-  footer .cta-btn {
+  .footer .cta-btn {
     width: 40vw;  
     font-size: 0.75rem;  
     padding: 0.25rem 0.5rem;
   }
 
-  footer .navbar {
+  .footer .navbar {
     display: none;
   }
 
-  footer .social-media-group {
+  .footer .social-media-group {
     padding: 0;
   }
 
-  footer .social-media-icons {
+  .footer .social-media-icons {
     padding: 0;
     text-align: center;
     letter-spacing: 0.5rem;
   }
 
-  footer .social-cta {
+  .footer .social-cta {
     display: none;
   }
 
